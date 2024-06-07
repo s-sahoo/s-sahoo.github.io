@@ -79,33 +79,6 @@
 
           </li>
 
-          <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
-          </li> -->
-
-          <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li> -->
 
           <li class="contact-item">
 
@@ -183,14 +156,14 @@
             <button class="navbar-link" data-nav-link>Background</button>
           </li>
 
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Papers</button>
+          </li>
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li> -->
@@ -458,7 +431,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>combinatorial optimization</button>
             </li>
 
             <li class="filter-item">
@@ -490,15 +463,15 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Diffusion Models</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>combinatorial optimization</button>
               </li>
 
               <li class="select-item">
                 <button data-select-item>Interpretability</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Diffusion Models</button>
               </li>
 
             </ul>
@@ -543,7 +516,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="combinatorial optimization">
               <a href="#">
 
                 <figure class="project-img">
@@ -551,12 +524,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-3.jpg" alt="identity" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Gradient Backpropagation Through Combinatorial Algorithms: Identity Works</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">combinatorial optimization</p>
 
               </a>
             </li>
@@ -605,90 +578,63 @@
       </article>
 
 
-      <article class="blog" data-page="blog">
+      <article class="papers" data-page="papers">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Papers</h2>
         </header>
 
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://s-sahoo.com/mdlm">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/mdlm.png" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Text Diffusion</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-06-23">June, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Simple and Effective Masked Diffusion Language Models</h3>
-
-                  <p class="blog-text">
-                    While diffusion models excel at generating high-quality images,
-                    they have traditionally lagged behind autoregressive (AR) methods
-                    in language modeling. This work demonstrates that masked discrete
-                    diffusion is more effective than previously thought. By applying
-                    an effective training recipe and a simplified, Rao-Blackwellized
-                    objective, we improve the performance of masked diffusion models.
-                    These models, trained with modern practices, achieve a new
-                    state-of-the-art among diffusion models and approach AR perplexity
-                    on language modeling benchmarks.
-                  </p>
-
-                </div>
-
-              </a>
+        <section class="papers">
+          <ul class="service-list" style="display: flex; flex-direction: column; padding: 0; margin: 0;">
+            <li class="service-item" style="display: flex; margin-bottom: 5px; padding: 5px;">
+              <div class="service-content-box" style="margin-left: 5px; flex-grow: 1;">
+                <p class="service-item-text" style="margin: 0;">
+                  <span style="color: rgb(249, 206, 97); display: inline;">Subham S. Sahoo</span>, Marianne Arriola, Yair Schiff, Aaron Gokaslan, Edgar Marroquin,
+                  Justin T Chiu, Alexander Rush, Volodymyr Kuleshov.
+                  <span style="color: white; font-weight: bold; display: inline;">Simple and Effective Masked Diffusion Language Models.</span> Under Review, 2024.
+                </p>
+              </div>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Image Diffusion</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-06-23">June, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Diffusion Models With Learned Adaptive Noise</h3>
-
-                  <p class="blog-text">
-                    Diffusion models are powerful for synthesizing high-quality images,
-                    but their performance depends heavily on the diffusion process. 
-                    This paper investigates whether the diffusion process can be learned 
-                    from data, grounded in Bayesian inference to improve log-likelihood 
-                    estimation. The proposed method, multivariate learned adaptive noise 
-                    (MuLAN), applies noise at different rates across an image, dispelling 
-                    the assumption that the ELBO is invariant to the noise process. Empirically, 
-                    MuLAN achieves state-of-the-art density estimation on CIFAR-10 and ImageNet,
-                    reducing training steps by 50%.
-                  </p>
-
-                </div>
-
-              </a>
+            <li class="service-item" style="display: flex; margin-bottom: 5px; padding: 5px;">
+              <div class="service-content-box" style="margin-left: 5px; flex-grow: 1;">
+                <p class="service-item-text" style="margin: 0;">
+                  <span style="color: rgb(249, 206, 97); display: inline;">Subham S. Sahoo</span>, Aaron Gokaslan, Chris De Sa, Volodymyr Kuleshov.
+                  <span style="color: white; font-weight: bold; display: inline;">
+                    Diffusion Models With Learned Adaptive Noise Processes.</span> Under Review, 2023.
+                </p>
+              </div>
             </li>
-
+            <li class="service-item" style="display: flex; margin-bottom: 5px; padding: 5px;">
+              <div class="service-content-box" style="margin-left: 5px; flex-grow: 1;">
+                <p class="service-item-text" style="margin: 0;">
+                  <span style="color: rgb(249, 206, 97); display: inline;">
+                    Subham S. Sahoo</span>, Anselm Paulus, Marin Vlastelica, Vit Musil, Volodymyr Kuleshov, Georg Martius.
+                  <span style="color: white; font-weight: bold; display: inline;">
+                    Gradient Backpropagation Through Combinatorial Algorithms: Identity Works.</span>
+                    International Conference on Learning Representations (<span style="color: rgb(249, 206, 97); display: inline;">ICLR - 2023</span>), 2023.
+                </p>
+              </div>
+            </li>
+            <li class="service-item" style="display: flex; margin-bottom: 5px; padding: 5px;">
+              <div class="service-content-box" style="margin-left: 5px; flex-grow: 1;">
+                <p class="service-item-text" style="margin: 0;">
+                  <span style="color: rgb(249, 206, 97); display: inline;">Subham S. Sahoo</span>, Subhashini Venugopalan, Li Li, Rishabh Singh, Patrick Riley.
+                  <span style="color: white; font-weight: bold; display: inline;">Scaling Symbolic Methods using Gradients for Neural Model Explanation.</span>
+                  International Conference on Learning
+                  Representations (<span style="color: rgb(249, 206, 97); display: inline;">ICLR - 2021</span>), 2021.
+                </p>
+              </div>
+            </li>
+            <li class="service-item" style="display: flex; margin-bottom: 5px; padding: 5px;">
+              <div class="service-content-box" style="margin-left: 5px; flex-grow: 1;">
+                <p class="service-item-text" style="margin: 0;">
+                  <span style="color: rgb(249, 206, 97); display: inline;">Subham S. Sahoo</span>, Christoph H. Lampert, Georg Martius.
+                  <span style="color: white; font-weight: bold; display: inline;">Learning Equations for Extrapolation and Control.</span>
+                  International Conference on Machine Learning (<span style="color: rgb(249, 206, 97); display: inline;">ICML - 2018</span>), 2018.
+                </p>
+              </div>
+            </li>
           </ul>
-
         </section>
 
       </article>
