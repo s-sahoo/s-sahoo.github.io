@@ -1,0 +1,24 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="25%" stop-color="#FFDB6E"/>
+      <stop offset="100%" stop-color="#FFBC5E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Solid yellow center circle -->
+  <circle cx="200" cy="200" r="40" fill="#FFDB6E"/>
+
+  <!-- Circular waves -->
+  <g fill="none" stroke="url(#waveGradient)" stroke-width="3">
+    <!-- <circle cx="200" cy="200" r="20" opacity="0.9"/> -->
+    <circle cx="200" cy="200" r="40" opacity="0.8"/>
+    <circle cx="200" cy="200" r="60" opacity="0.7"/>
+    <circle cx="200" cy="200" r="80" opacity="0.6"/>
+    <circle cx="200" cy="200" r="100" opacity="0.5"/>
+    <circle cx="200" cy="200" r="120" opacity="0.4"/>
+    <circle cx="200" cy="200" r="140" opacity="0.3"/>
+    <circle cx="200" cy="200" r="160" opacity="0.2"/>
+    <circle cx="200" cy="200" r="180" opacity="0.1"/>
+  </g>
+</svg>
