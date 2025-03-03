@@ -1849,6 +1849,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
+    margin-left: -14px;
   }
 
   .contacts-list { grid-template-columns: 1fr; }
