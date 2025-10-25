@@ -1881,3 +1881,21 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+/* Hide extra news lines by default */
+.is-hidden { display: none; }
+
+/* Button look (feel free to tweak to match your theme) */
+.btn.more-less {
+  margin-top: 8px;
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 4px 8px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.btn.more-less:hover { transform: translateY(-1px); }

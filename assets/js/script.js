@@ -157,3 +157,42 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const newsSection = document.querySelector('section.news');
+  if (!newsSection) return;
+
+  // Each news line is a <p class="service-item-text"> inside the News section.
+  const items = newsSection.querySelectorAll('.service-item-text');
+  const maxVisible = 5;
+
+  if (items.length <= maxVisible) return; // nothing to collapse
+
+  // Hide everything after the first `maxVisible` items
+  for (let i = maxVisible; i < items.length; i++) {
+    items[i].classList.add('is-hidden');
+  }
+
+  // Create the Show more / Show less button
+  const btn = document.createElement('button');
+  btn.className = 'btn more-less';
+  btn.type = 'button';
+  btn.textContent = 'Show more';
+  btn.setAttribute('aria-expanded', 'false');
+
+  // Place the button at the end of the news content box
+  const container =
+    newsSection.querySelector('.service-content-box') || newsSection;
+  container.appendChild(btn);
+
+  // Toggle behavior
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    for (let i = maxVisible; i < items.length; i++) {
+      items[i].classList.toggle('is-hidden');
+    }
+    btn.setAttribute('aria-expanded', String(!expanded));
+    btn.textContent = expanded ? 'Show more' : 'Show less';
+  });
+});
