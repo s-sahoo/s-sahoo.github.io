@@ -174,12 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
     items[i].classList.add('is-hidden');
   }
 
-  // Create the Show more / Show less button
+  // Create the expand / collapse button
   const btn = document.createElement('button');
   btn.className = 'btn more-less';
   btn.type = 'button';
-  btn.textContent = 'Show more';
+  btn.textContent = '▾';
   btn.setAttribute('aria-expanded', 'false');
+  btn.setAttribute('aria-label', 'Show more news');
 
   // Place the button at the end of the news content box
   const container =
@@ -193,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
       items[i].classList.toggle('is-hidden');
     }
     btn.setAttribute('aria-expanded', String(!expanded));
-    btn.textContent = expanded ? 'Show more' : 'Show less';
+    btn.textContent = expanded ? '▾' : '▴';
+    btn.setAttribute('aria-label', expanded ? 'Show more news' : 'Show less news');
   });
 });
